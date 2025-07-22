@@ -1,19 +1,19 @@
 return function()
 local colors = {
-	bg = "#222436",           -- Cooler night background
-	fg = "#c8d3f5",           -- Pale foreground
-	selection_bg = "#2f334d", -- Visual selection
-	selection_fg = "#ffffff",
-	inactive_fg = "#7a88cf",  -- Comment gray-blue
-	positive = "#9ece6a",     -- Green
-	negative = "#ff757f",     -- Red
-	neutral = "#ffc777",      -- Yellow/amber
-	link = "#82aaff",         -- Blue highlight
-	bar_bg = "#1e2030",       -- UI background (tab/status)
+	bg = "#222436",             -- Slightly lighter than tokyonight night
+	fg = "#c8d3f5",             -- Softer blue-white
+	selection_bg = "#2f334d",  -- Visual selection
+	selection_fg = "#c8d3f5",
+	inactive_fg = "#7a88cf",   -- Desaturated lavender-gray
+	positive = "#9ece6a",      -- Green
+	negative = "#ff757f",      -- Red-pinkish
+	neutral  = "#ffc777",      -- Yellow
+	link     = "#82aaff",      -- Soft bright blue
+	bar_bg = "#1b1d2b",        -- Bar background
 	bar_fg = "#c8d3f5",
 }
 
--- Core UI
+-- General UI
 vim.cmd("highlight Normal guibg=" .. colors.bg .. " guifg=" .. colors.fg)
 vim.cmd("highlight Visual guibg=" .. colors.selection_bg .. " guifg=" .. colors.selection_fg)
 vim.cmd("highlight Comment guifg=" .. colors.inactive_fg)
@@ -26,9 +26,11 @@ vim.cmd("highlight CursorLineNr guifg=" .. colors.fg .. " guibg=" .. colors.bg)
 vim.cmd("highlight Pmenu guibg=" .. colors.bg .. " guifg=" .. colors.fg)
 vim.cmd("highlight PmenuSel guibg=" .. colors.selection_bg .. " guifg=" .. colors.fg)
 
--- StatusLine & Tabline
+-- Status Line
 vim.cmd("highlight StatusLine guibg=" .. colors.bar_bg .. " guifg=" .. colors.bar_fg)
 vim.cmd("highlight StatusLineNC guibg=" .. colors.bar_bg .. " guifg=" .. colors.inactive_fg)
+
+-- Tabline
 vim.cmd("highlight TabLine guibg=" .. colors.bar_bg .. " guifg=" .. colors.inactive_fg)
 vim.cmd("highlight TabLineSel guibg=" .. colors.selection_bg .. " guifg=" .. colors.fg)
 vim.cmd("highlight TabLineFill guibg=" .. colors.bg)
@@ -38,29 +40,13 @@ vim.api.nvim_set_hl(0, "GitSignsAdd", { fg = colors.positive })
 vim.api.nvim_set_hl(0, "GitSignsChange", { fg = colors.neutral })
 vim.api.nvim_set_hl(0, "GitSignsDelete", { fg = colors.negative })
 
--- nvim-tree
-vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = colors.bg, fg = colors.fg })
-vim.api.nvim_set_hl(0, "NvimTreeNormalNC", { bg = colors.bg, fg = colors.fg })
-vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { fg = colors.bg })
-vim.api.nvim_set_hl(0, "NvimTreeFolderName", { fg = colors.link })
-vim.api.nvim_set_hl(0, "NvimTreeOpenedFolderName", { fg = colors.link, bold = true })
-vim.api.nvim_set_hl(0, "NvimTreeIndentMarker", { fg = colors.inactive_fg })
-vim.api.nvim_set_hl(0, "NvimTreeFolderIcon", { fg = colors.link })
-vim.api.nvim_set_hl(0, "NvimTreeRootFolder", { fg = colors.neutral, bold = true })
-vim.api.nvim_set_hl(0, "NvimTreeExecFile", { fg = colors.positive })
-vim.api.nvim_set_hl(0, "NvimTreeSpecialFile", { fg = colors.neutral })
-vim.api.nvim_set_hl(0, "NvimTreeImageFile", { fg = colors.fg })
-vim.api.nvim_set_hl(0, "NvimTreeSymlink", { fg = colors.link })
+-- BufferLine
+local utils = require("colors.utils")
+pcall(function()
+require("bufferline").setup({
+	highlights = utils.bufferline_highlights(colors),
+})
+end)
 
--- Bufferline
-local ok, utils = pcall(require, "colors.utils")
-if ok then
-	pcall(function()
-	require("bufferline").setup({
-		highlights = utils.bufferline_highlights(colors),
-	})
-	end)
-	end
-
-	return colors
-	end
+return colors
+end

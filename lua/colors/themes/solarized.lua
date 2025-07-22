@@ -1,17 +1,18 @@
--- colors/themes/solarized.lua
 return function()
 local colors = {
-	bg = "#002b36",          -- Base03
-	fg = "#839496",          -- Base0
-	selection_bg = "#073642", -- Base02
-	selection_fg = "#eee8d5", -- Base2
-	inactive_fg = "#586e75", -- Base01
+	bg = "#002b36",          -- Base03 (dark background)
+	fg = "#839496",          -- Base0 (default foreground)
+	selection_bg = "#073642", -- Base02 (selection background)
+	selection_fg = "#eee8d5", -- Base2 (selection foreground)
+	inactive_fg = "#586e75",  -- Base01
+
 	positive = "#859900",    -- Green
 	negative = "#dc322f",    -- Red
-	neutral = "#b58900",     -- Yellow
-	link = "#268bd2",        -- Blue
-	bar_bg = "#073642",      -- Base02
-	bar_fg = "#839496",      -- Base0
+	neutral  = "#b58900",    -- Yellow
+	link     = "#268bd2",    -- Blue
+
+	bar_bg = "#073642",      -- Matches the dark blue tone
+	bar_fg = "#839496",
 }
 
 -- General UI
@@ -31,7 +32,7 @@ vim.cmd("highlight PmenuSel guibg=" .. colors.selection_bg .. " guifg=" .. color
 vim.cmd("highlight StatusLine guibg=" .. colors.bar_bg .. " guifg=" .. colors.bar_fg)
 vim.cmd("highlight StatusLineNC guibg=" .. colors.bar_bg .. " guifg=" .. colors.inactive_fg)
 
--- Tabs
+-- Tabline
 vim.cmd("highlight TabLine guibg=" .. colors.bar_bg .. " guifg=" .. colors.inactive_fg)
 vim.cmd("highlight TabLineSel guibg=" .. colors.selection_bg .. " guifg=" .. colors.fg)
 vim.cmd("highlight TabLineFill guibg=" .. colors.bg)
@@ -41,19 +42,13 @@ vim.api.nvim_set_hl(0, "GitSignsAdd", { fg = colors.positive })
 vim.api.nvim_set_hl(0, "GitSignsChange", { fg = colors.neutral })
 vim.api.nvim_set_hl(0, "GitSignsDelete", { fg = colors.negative })
 
--- nvim-tree
-vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = colors.bg, fg = colors.fg })
-vim.api.nvim_set_hl(0, "NvimTreeNormalNC", { bg = colors.bg, fg = colors.fg })
-vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { fg = colors.bg })
-vim.api.nvim_set_hl(0, "NvimTreeFolderName", { fg = colors.link })
-vim.api.nvim_set_hl(0, "NvimTreeOpenedFolderName", { fg = colors.link, bold = true })
-vim.api.nvim_set_hl(0, "NvimTreeIndentMarker", { fg = colors.inactive_fg })
-vim.api.nvim_set_hl(0, "NvimTreeFolderIcon", { fg = colors.link })
-vim.api.nvim_set_hl(0, "NvimTreeRootFolder", { fg = colors.neutral, bold = true })
-vim.api.nvim_set_hl(0, "NvimTreeExecFile", { fg = colors.positive })
-vim.api.nvim_set_hl(0, "NvimTreeSpecialFile", { fg = colors.neutral })
-vim.api.nvim_set_hl(0, "NvimTreeImageFile", { fg = colors.fg })
-vim.api.nvim_set_hl(0, "NvimTreeSymlink", { fg = colors.link })
+-- BufferLine
+local utils = require("colors.utils")
+pcall(function()
+require("bufferline").setup({
+	highlights = utils.bufferline_highlights(colors),
+})
+end)
 
 return colors
 end

@@ -40,19 +40,14 @@ vim.api.nvim_set_hl(0, "GitSignsAdd", { fg = colors.positive })
 vim.api.nvim_set_hl(0, "GitSignsChange", { fg = colors.neutral })
 vim.api.nvim_set_hl(0, "GitSignsDelete", { fg = colors.negative })
 
--- nvim-tree
+-- NvimTree
 vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = colors.bg, fg = colors.fg })
-vim.api.nvim_set_hl(0, "NvimTreeNormalNC", { bg = colors.bg, fg = colors.fg })
-vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { fg = colors.bg })
 vim.api.nvim_set_hl(0, "NvimTreeFolderName", { fg = colors.link })
-vim.api.nvim_set_hl(0, "NvimTreeOpenedFolderName", { fg = colors.link, bold = true })
+vim.api.nvim_set_hl(0, "NvimTreeOpenedFolderName", { fg = colors.positive })
 vim.api.nvim_set_hl(0, "NvimTreeIndentMarker", { fg = colors.inactive_fg })
-vim.api.nvim_set_hl(0, "NvimTreeFolderIcon", { fg = colors.link })
-vim.api.nvim_set_hl(0, "NvimTreeRootFolder", { fg = colors.neutral, bold = true })
+vim.api.nvim_set_hl(0, "NvimTreeFolderIcon", { fg = colors.fg })
 vim.api.nvim_set_hl(0, "NvimTreeExecFile", { fg = colors.positive })
-vim.api.nvim_set_hl(0, "NvimTreeSpecialFile", { fg = colors.neutral })
-vim.api.nvim_set_hl(0, "NvimTreeImageFile", { fg = colors.fg })
-vim.api.nvim_set_hl(0, "NvimTreeSymlink", { fg = colors.link })
+vim.api.nvim_set_hl(0, "NvimTreeSpecialFile", { fg = colors.negative, bold = true })
 
 return colors
 end

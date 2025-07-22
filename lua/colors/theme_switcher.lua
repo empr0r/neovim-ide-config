@@ -57,6 +57,9 @@ local themes = {
 	"tokyonight",
 	"tokyonightmoon",
 
+	-- Cursed
+	"soyjacksunset",
+
 	-- Mixed / traditional palettes
 	"gruvbox",
 	"solarized",
