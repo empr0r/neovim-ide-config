@@ -144,21 +144,28 @@ Each theme includes consistent styling for:
 
 ### Official Themes:
 - oxocarbon, gruvbox, everforest,
-  
-- tokyonight, catppuccin, dracula,
-  
-- monokai, nord, solarized
+  <img width="1892" height="1031" alt="oxocarbon" src="https://github.com/user-attachments/assets/9fb71c56-47ad-41ca-8298-1c4a96ba1610" /><img width="1887" height="1027" alt="gruvbox" src="https://github.com/user-attachments/assets/27cdf544-2eb9-48d2-9872-3775acb4d91e" /><img width="1891" height="1023" alt="everforest" src="https://github.com/user-attachments/assets/48c332ff-4d40-4b71-9a88-c471fcc4696e" />
 
+- tokyonight, tokyonightmoon, catppuccin, dracula,
+  <img width="1891" height="1032" alt="tokyonight" src="https://github.com/user-attachments/assets/308a0429-4f02-4892-9235-93749157a8e7" /><img width="1891" height="1028" alt="tokyomoon" src="https://github.com/user-attachments/assets/106eb8fb-3419-4491-b82b-2cb75000bd65" /><img width="1891" height="1032" alt="catpuccin" src="https://github.com/user-attachments/assets/344075a3-d7a5-4a98-9d4a-735bdce6a6e3" /><img width="1891" height="1028" alt="dracula" src="https://github.com/user-attachments/assets/c8dff805-a844-435f-a434-53a710d48c40" />
+
+- monokai, nord, solarized
+<img width="1887" height="1026" alt="monokai" src="https://github.com/user-attachments/assets/37a34252-8693-4b4a-bad2-7b88f4d677e7" /><img width="1885" height="1027" alt="nord" src="https://github.com/user-attachments/assets/486b2773-2d29-4299-9150-317a5f246c7e" /><img width="1887" height="1025" alt="solarized" src="https://github.com/user-attachments/assets/14bfb6dd-6127-4ae3-8c8e-71e8741ea646" />
 
 ### Homebrew Themes:
 - aperture, nebula, verdant,
+  <img width="1890" height="1028" alt="aperture" src="https://github.com/user-attachments/assets/eda236af-b0e3-4b91-9b54-1c428e34cb0e" /><img width="1892" height="1028" alt="nebula" src="https://github.com/user-attachments/assets/ee269b1a-d509-47f2-b65e-6690eb66fd48" /><img width="1892" height="1027" alt="verdant" src="https://github.com/user-attachments/assets/54545dae-9b29-42a5-ae38-44547ac5a9e5" />
+
 - sapphire, ronin, claret,
+  <img width="1887" height="1026" alt="sapphire" src="https://github.com/user-attachments/assets/93b70d90-ce17-41cd-8b0b-8ced27ef74ab" /><img width="1888" height="1030" alt="ronin" src="https://github.com/user-attachments/assets/45d5fd74-8eda-4b2c-ab29-bd528df12865" /><img width="1890" height="1031" alt="claret" src="https://github.com/user-attachments/assets/8de19086-3010-4b9d-a1ca-1511bddccb10" />
+
 - bloodsport, cafe, cafeexpresso,
+<img width="1887" height="1023" alt="Bloodsport" src="https://github.com/user-attachments/assets/067d448d-69a4-4c76-9815-f81eac3412f4" /><img width="1895" height="1031" alt="cafe" src="https://github.com/user-attachments/assets/a8619124-96f1-4f68-ab79-5c70a2950204" /><img width="1890" height="1029" alt="cafeexpresso" src="https://github.com/user-attachments/assets/83aebc13-8cad-4516-be94-ee34f18a190d" />
+
 - matcha, matchamoon
+<img width="1890" height="1028" alt="matcha" src="https://github.com/user-attachments/assets/73dfc82e-7d58-474d-b9b2-188c273253b8" /><img width="1890" height="1027" alt="matchamoon" src="https://github.com/user-attachments/assets/af31c404-315f-4edb-9773-bba49d57247b" />
 
-Special: `soyjacksunset` is available via secret command. Use at your own risk.
-
-There is **no theme switcher UI** — theme cycling is handled with `<C-t>`, and manual selection uses the `:SetTheme` command.
+Theme cycling is handled with `<C-t>`, and manual selection uses the `:SetTheme` command. Because of how jank neovim is at times when you switch to a theme you should restart neovim
 
 ---
 
