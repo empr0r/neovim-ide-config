@@ -1,0 +1,25 @@
+# Python virtual environments (if you add one later)
+.venv/
+
+# Node.js dependencies
+node_modules/
+
+# Neovim swap, backup, and undo files
+*.swp
+*.swo
+*.backup
+*.un~
+
+# Lockfiles and temporary files
+lazy-lock.json
+package-lock.json
+
+# OS-specific files
+.DS_Store   # macOS system files
+Thumbs.db   # Windows system files
+
+# Log files
+*.log
+
+# Lua or plugin debugging files
+nvim-debug.log
