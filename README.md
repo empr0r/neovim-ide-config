@@ -2,27 +2,25 @@
 
 This is a lean, keyboard-driven Neovim setup for developers who care about performance and control. Faster than Visual Studio. Less bloated than Emacs. Sharper than your average IDE.
 
-Themes? Optional. Nerdfonts? Not required. This config focuses on precision and simplicity without sacrificing power.
+This config focuses on precision and simplicity without sacrificing power. Feature-rich without compromising performance and efficiency.
 
 ---
 
 ## Table of Contents
 
-- [Features Overview](#-features-overview)
-- [File Structure](#-file-structure)
-- [Keybindings](#️-keybindings)
+- [Features Overview](#features-overview)
+- [File Structure](#file-structure)
+- [Keybindings](#keybindings)
   - [General](#general)
   - [Navigation](#navigation)
   - [LSP / Code](#lsp--code)
   - [Git](#git)
   - [Plugins](#plugins)
-- [Theme System (Optional)](#-theme-system-optional)
-  - [Builtin Themes](#builtin-themes)
-  - [Homebrew Themes](#homebrew-themes)
-- [Requirements](#️-requirements)
-- [Philosophy](#-philosophy)
-- [Plugin Stack](#-plugin-stack)
-- [Installation](#️-installation)
+- [Theme System (Optional)](#theme-system-optional)
+- [Requirements](#requirements)
+- [Philosophy](#philosophy)
+- [Plugin Stack](#plugin-stack)
+- [Installation](#installation)
 - [License](#license)
 
 ---
@@ -78,16 +76,16 @@ Themes? Optional. Nerdfonts? Not required. This config focuses on precision and 
 | Leader + c   | Close buffer                 |
 
 ### Navigation
-| Keybind     | Action                         |
-|------------|----------------------------------|
-| Ctrl + H/L/J/K | Move between windows         |
-| Ctrl + Arrow Keys | Resize window             |
-| Shift + H/L  | Previous / next buffer         |
-| Leader + e   | Toggle file tree               |
-| Leader + f   | Find files                     |
-| Leader + g   | Live grep                      |
-| Leader + b   | List buffers                   |
-| Leader + h   | Help tags                      |
+| Keybind         | Action                         |
+|----------------|----------------------------------|
+| Ctrl + H/L/J/K  | Move between windows            |
+| Ctrl + Arrows   | Resize window                   |
+| Shift + H/L     | Previous / next buffer          |
+| Leader + e      | Toggle file tree                |
+| Leader + f      | Find files                      |
+| Leader + g      | Live grep                       |
+| Leader + b      | List buffers                    |
+| Leader + h      | Help tags                       |
 
 ### LSP / Code
 | Keybind     | Action                         |
@@ -113,18 +111,18 @@ Themes? Optional. Nerdfonts? Not required. This config focuses on precision and 
 | Leader + hr | Reset hunk                      |
 
 ### Plugins
-| Keybind     | Action                          |
-|------------|----------------------------------|
-| Leader + mp/ms | Start/Stop markdown preview  |
-| Leader + qo/qc | Open/Close quickfix          |
-| Leader + lo/lc | Open/Close location list     |
-| Leader + xx/xX | Toggle diagnostics/all/buffer|
-| Leader + cs/cl | Show symbols/LSP items       |
-| Leader + xL/xQ | Location/Quickfix list       |
-| Leader + sr | Open Spectre                    |
-| Leader + /  | Toggle comment                  |
-| Leader + t  | Toggle terminal                 |
-| Ctrl + T    | Next theme                      |
+| Keybind       | Action                          |
+|--------------|----------------------------------|
+| Leader + mp/ms | Start/Stop markdown preview    |
+| Leader + qo/qc | Open/Close quickfix            |
+| Leader + lo/lc | Open/Close location list       |
+| Leader + xx/xX | Toggle diagnostics/all/buffer  |
+| Leader + cs/cl | Show symbols/LSP items         |
+| Leader + xL/xQ | Location/Quickfix list         |
+| Leader + sr    | Open Spectre                   |
+| Leader + /     | Toggle comment                 |
+| Leader + t     | Toggle terminal                |
+| Ctrl + T       | Next theme                     |
 
 ---
 
@@ -142,30 +140,13 @@ Each theme includes consistent styling for:
 - GitSigns
 - Popup menus, diagnostics, and UI elements
 
-### Builtin Themes
-- oxocarbon
-- gruvbox
-- everforest
-- tokyonight
-- catppuccin
-- dracula
-- monokai
-- nord
-- nebula
-- verdant
-- sapphire
-- solarized
+### Official Themes:
+- oxocarbon, gruvbox, everforest, tokyonight, catppuccin, dracula, monokai, nord, solarized, aperture
 
-### Homebrew Themes
-- ronin
-- claret
-- bloodsport
-- cafe
-- cafeexpresso
-- matcha
-- matchamoon
-- aperture
-- **soyjacksunset** (easter egg only, accessible via command)
+### Homebrew Themes:
+- nebula, verdant, sapphire, ronin, claret, bloodsport, cafe, cafeexpresso, matcha, matchamoon
+
+Special: `soyjacksunset` is available via secret command. Use at your own risk.
 
 There is **no theme switcher UI** — theme cycling is handled with `<C-t>`, and manual selection uses the `:SetTheme` command.
 
