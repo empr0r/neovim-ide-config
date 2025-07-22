@@ -2,7 +2,7 @@
 
 This is a lean, keyboard-driven Neovim setup for developers who care about performance and control. Faster than Visual Studio. Less bloated than Emacs. Sharper than your average IDE.
 
-This config focuses on precision and simplicity without sacrificing power. Feature-rich without compromising performance and efficiency.
+Themes? Optional. Nerdfonts? Not required. This config focuses on precision and simplicity without sacrificing power. Feature-rich without compromising performance and efficiency.
 
 ---
 
