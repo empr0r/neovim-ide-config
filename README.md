@@ -219,11 +219,53 @@ If Visual Studio is a cruise ship, this is a gunboat.
 
 ## Plugin Stack
 
-- **Core**: `lazy.nvim`, `telescope.nvim`, `nvim-tree`, `lualine`, `bufferline`
-- **Editing**: `autopairs`, `comment.nvim`, `surround.nvim`
-- **LSP & Completion**: `nvim-lspconfig`, `nvim-cmp`, `luasnip`, `mason`, `null-ls`
-- **Git**: `gitsigns.nvim`, `vim-fugitive`
-- **Extras**: Markdown preview, spellcheck, terminal integration
+## Plugin Stack
+
+### Core
+- `lazy.nvim` — plugin manager
+- `plenary.nvim` — utility functions
+
+### UI
+- `lualine.nvim` — statusline
+- `bufferline.nvim` — tabline buffer nav
+- `nvim-tree.lua` — file explorer
+- `nvim-web-devicons` — optional icons
+
+### Navigation
+- `telescope.nvim` — fuzzy finding
+- `nvim-spectre` — global search & replace
+
+### Editing
+- `nvim-autopairs` — auto-close brackets
+- `Comment.nvim` — toggle comments
+- `nvim-surround` — surround editing
+- `vim-table-mode` — Markdown table editor
+
+### Git
+- `gitsigns.nvim` — gutter signs
+- `vim-fugitive` — Git integration
+- `git-conflict.nvim` — conflict resolution
+
+### LSP & Completion
+- `nvim-lspconfig` — core LSP client
+- `mason.nvim`, `mason-lspconfig.nvim` — LSP installer/manager
+- `nvim-cmp` — autocompletion engine
+- `cmp-nvim-lsp`, `cmp-buffer`, `cmp-path`, `cmp_luasnip` — completion sources
+- `luasnip` — snippet engine
+- `lspsaga.nvim` — LSP UI enhancements
+- `none-ls.nvim` — formatting and linting
+
+### Debugging
+- `nvim-dap` — core DAP support
+- `nvim-dap-ui` — debugger UI
+- `nvim-dap-virtual-text` — inline debug info
+- `nvim-nio` — async helpers
+
+### Markdown
+- `markdown-preview.nvim` — live Markdown preview
+
+### Terminal
+- `toggleterm.nvim` — terminal integration
 
 ---
 
