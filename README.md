@@ -272,7 +272,7 @@ If Visual Studio is a cruise ship, this is a gunboat.
 Clone the repo into your Neovim config directory:
 
 ```sh
-git clone <your-repo-url> ~/.config/nvim
+git github.com/empr0r/neovim-ide-config.git ~/.config/nvim
 nvim
 ```
 
