@@ -219,8 +219,6 @@ If Visual Studio is a cruise ship, this is a gunboat.
 
 ## Plugin Stack
 
-## Plugin Stack
-
 ### Core
 - `lazy.nvim` — plugin manager
 - `plenary.nvim` — utility functions
