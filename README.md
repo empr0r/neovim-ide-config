@@ -4,6 +4,8 @@ This is a lean, keyboard-driven Neovim setup for developers who care about perfo
 
 Themes? Optional. Nerdfonts? Not required. This config focuses on precision and simplicity without sacrificing power. Feature-rich without compromising performance and efficiency.
 
+<img width="1920" height="1036" alt="nvimenvironment" src="https://github.com/user-attachments/assets/fae864d7-e94c-422b-9187-6f45b94e3535" />
+
 ---
 
 ## Table of Contents
@@ -141,10 +143,18 @@ Each theme includes consistent styling for:
 - Popup menus, diagnostics, and UI elements
 
 ### Official Themes:
-- oxocarbon, gruvbox, everforest, tokyonight, catppuccin, dracula, monokai, nord, solarized, aperture
+- oxocarbon, gruvbox, everforest,
+  
+- tokyonight, catppuccin, dracula,
+  
+- monokai, nord, solarized
+
 
 ### Homebrew Themes:
-- nebula, verdant, sapphire, ronin, claret, bloodsport, cafe, cafeexpresso, matcha, matchamoon
+- aperture, nebula, verdant,
+- sapphire, ronin, claret,
+- bloodsport, cafe, cafeexpresso,
+- matcha, matchamoon
 
 Special: `soyjacksunset` is available via secret command. Use at your own risk.
 
