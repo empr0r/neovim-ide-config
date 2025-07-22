@@ -178,15 +178,15 @@ Each theme includes consistent styling for:
 - claret
   <img width="1890" height="1031" alt="claret" src="https://github.com/user-attachments/assets/8de19086-3010-4b9d-a1ca-1511bddccb10" />
 - bloodsport
-<img width="1887" height="1023" alt="Bloodsport" src="https://github.com/user-attachments/assets/067d448d-69a4-4c76-9815-f81eac3412f4" />
+  <img width="1887" height="1023" alt="Bloodsport" src="https://github.com/user-attachments/assets/067d448d-69a4-4c76-9815-f81eac3412f4" />
 - cafe
-<img width="1895" height="1031" alt="cafe" src="https://github.com/user-attachments/assets/a8619124-96f1-4f68-ab79-5c70a2950204" />
+  <img width="1895" height="1031" alt="cafe" src="https://github.com/user-attachments/assets/a8619124-96f1-4f68-ab79-5c70a2950204" />
 - cafeexpresso
-<img width="1890" height="1029" alt="cafeexpresso" src="https://github.com/user-attachments/assets/83aebc13-8cad-4516-be94-ee34f18a190d" />
+  <img width="1890" height="1029" alt="cafeexpresso" src="https://github.com/user-attachments/assets/83aebc13-8cad-4516-be94-ee34f18a190d" />
 - matcha
-<img width="1890" height="1028" alt="matcha" src="https://github.com/user-attachments/assets/73dfc82e-7d58-474d-b9b2-188c273253b8" />
+  <img width="1890" height="1028" alt="matcha" src="https://github.com/user-attachments/assets/73dfc82e-7d58-474d-b9b2-188c273253b8" />
 - matchamoon
-<img width="1890" height="1027" alt="matchamoon" src="https://github.com/user-attachments/assets/af31c404-315f-4edb-9773-bba49d57247b" />
+  <img width="1890" height="1027" alt="matchamoon" src="https://github.com/user-attachments/assets/af31c404-315f-4edb-9773-bba49d57247b" />
 
 Theme cycling is handled with `<C-t>`, and manual selection uses the `:SetTheme` command. Because of how jank neovim is at times when you switch to a theme you should restart neovim
 
