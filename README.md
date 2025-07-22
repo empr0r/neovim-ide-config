@@ -50,7 +50,6 @@ Themes? Optional. Nerdfonts? Not required. This config focuses on precision and 
 ~/.config/nvim
 ├── init.lua              # Main config entry
 ├── lua/
-│   ├── core/             # Options, keymaps, autocmds
 │   ├── plugins/          # Plugin specs and setup
 │   ├── colors/           # Theme modules
 │   └── utils/            # Helpers (clipboard, theme switching, etc.)
