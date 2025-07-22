@@ -1,3 +1,5 @@
+vim.o.clipboard = "unnamedplus"
+
 -- Load general settings
 require("settings") -- Configure Neovim options (e.g., line numbers, tab settings)
 
