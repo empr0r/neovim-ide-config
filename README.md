@@ -4,7 +4,7 @@ This is a lean, keyboard-driven Neovim setup for developers who care about perfo
 
 Themes? Optional. Nerdfonts? Not required. This config focuses on precision and simplicity without sacrificing power. Feature-rich without compromising performance and efficiency.
 
-<img width="1920" height="1036" alt="nvimenvironment" src="https://github.com/user-attachments/assets/fae864d7-e94c-422b-9187-6f45b94e3535" />
+<img width="1890" height="1028" alt="aperture" src="https://github.com/user-attachments/assets/eda236af-b0e3-4b91-9b54-1c428e34cb0e" />
 
 ---
 
