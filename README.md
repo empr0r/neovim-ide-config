@@ -142,7 +142,7 @@ Each theme includes consistent styling for:
 - Popup menus, diagnostics, and UI elements
 
 ### Official Themes:
-- oxocarbon everforest,
+- oxocarbon
   <img width="1892" height="1031" alt="oxocarbon" src="https://github.com/user-attachments/assets/9fb71c56-47ad-41ca-8298-1c4a96ba1610" />
 - gruvbox
   <img width="1887" height="1027" alt="gruvbox" src="https://github.com/user-attachments/assets/27cdf544-2eb9-48d2-9872-3775acb4d91e" />
