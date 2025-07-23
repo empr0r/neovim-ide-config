@@ -2,7 +2,7 @@
 
 This is a lean, keyboard-driven Neovim setup for developers who care about performance and control. Faster than Visual Studio. Less bloated than Emacs. Sharper than your average IDE.
 
-Themes? Optional. Nerdfonts? Not required. This config focuses on precision and simplicity without sacrificing power. Feature-rich without compromising performance and efficiency.
+This config focuses on precision and simplicity without sacrificing power. Feature-rich without compromising performance and efficiency.
 
 <img width="1890" height="1028" alt="aperture" src="https://github.com/user-attachments/assets/eda236af-b0e3-4b91-9b54-1c428e34cb0e" />
 
@@ -18,9 +18,8 @@ Themes? Optional. Nerdfonts? Not required. This config focuses on precision and 
   - [LSP / Code](#lsp--code)
   - [Git](#git)
   - [Plugins](#plugins)
-- [Theme System (Optional)](#theme-system-optional)
+- [Theme System](#theme-system)
 - [Requirements](#requirements)
-- [Philosophy](#philosophy)
 - [Plugin Stack](#plugin-stack)
 - [Installation](#installation)
 - [License](#license)
@@ -127,7 +126,7 @@ Themes? Optional. Nerdfonts? Not required. This config focuses on precision and 
 
 ---
 
-## Theme System (Optional)
+## Theme System
 
 Themes are modular Lua files in `lua/colors/` and are switchable at runtime:
 
@@ -194,26 +193,12 @@ Theme cycling is handled with `<C-t>`, and manual selection uses the `:SetTheme`
 ## Requirements
 
 - **Neovim 0.9+**
-- **Wayland**: `wl-clipboard` for clipboard support
+- **wl-clipboard/XClip** for clipboard support
 - Recommended:
   - `ripgrep`, `fd`, `bat`
   - `node`, `npm`, `python3`, `pip` (for LSPs and formatters)
 
 No Nerd Font dependency. No special terminal required.
-
----
-
-## Philosophy
-
-This is not a theme showcase or a plugin zoo.  
-This is a surgical instrument for writing code.  
-
-- Themes are optional
-- No wasted CPU cycles
-- Every feature is justifiable
-- Every keybind is intentional
-
-If Visual Studio is a cruise ship, this is a gunboat.
 
 ---
 
